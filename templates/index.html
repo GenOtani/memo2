@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>メモアプリ</title>
+</head>
+<body>
+  <h1>📝 メモアプリ</h1>
+
+  <form method="POST">
+    <input type="text" name="memo" placeholder="メモを入力" required>
+    <button type="submit">追加</button>
+  </form>
+
+  <ul>
+    {% for m in memos %}
+      <li>{{ m }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
